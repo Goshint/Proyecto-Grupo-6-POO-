@@ -4,24 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce38c511-0d00-4573-99e8-58a8e9a3d0f7" name="Changes" comment="commit spring 3">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Backend POO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Backend POO.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="ce38c511-0d00-4573-99e8-58a8e9a3d0f7" name="Changes" comment="commit spring 4">
+      <change afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/rest/CambioMembresiaRest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/rest/InscribirRest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/rest/PagoRest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/rest/RegistrarSocioRest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/rest/RegistroAccesoRest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/service/CambioMembresiaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/service/InscribirService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/service/PagoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/service/RegistrarSocioService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/service/RegistroAccesoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GimnasioVida-Fit/GimnasioVida-Fit/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GimnasioVida-Fit/GimnasioVida-Fit/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GimnasioVida-Fit/GimnasioVida-Fit/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GimnasioVida-Fit/GimnasioVida-Fit/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GimnasioVida-Fit/GimnasioVida-Fit/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GimnasioVida-Fit/GimnasioVida-Fit/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GimnasioVida-Fit/GimnasioVida-Fit/src/main/java/pe/uni/pe/GimnasioVida_Fit/GimnasioVidaFitApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GimnasioVida-Fit/GimnasioVida-Fit/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GimnasioVida-Fit/GimnasioVida-Fit/src/test/java/pe/uni/pe/GimnasioVida_Fit/GimnasioVidaFitApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/dto/CambioMembresiaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/dto/CambioMembresiaDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/dto/InscribirDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/dto/InscribirDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/dto/PagoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/dto/PagoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/dto/RegistrarSocioDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/dto/RegistrarSocioDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/dto/RegistroAccesoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/dto/RegistroAccesoDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +49,9 @@
     &quot;accountId&quot;: &quot;50c1fed7-c011-491d-8ce9-3ee2545ef3f2&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/service/RegistroAccesoService.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -152,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781232253385</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit spring 4">
+      <option name="closed" value="true" />
+      <created>1781232888820</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1781232888820</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +172,7 @@
     <MESSAGE value="commit spring" />
     <MESSAGE value="commit spring 2" />
     <MESSAGE value="commit spring 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit spring 3" />
+    <MESSAGE value="commit spring 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit spring 4" />
   </component>
 </project>

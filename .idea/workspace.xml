@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce38c511-0d00-4573-99e8-58a8e9a3d0f7" name="Changes" comment="commit spring 5">
+    <list default="true" id="ce38c511-0d00-4573-99e8-58a8e9a3d0f7" name="Changes" comment="commit spring 7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/dto/CambioMembresiaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/dto/CambioMembresiaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/service/CambioMembresiaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/service/CambioMembresiaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/service/InscribirService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/service/InscribirService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +173,23 @@
       <option name="project" value="LOCAL" />
       <updated>1781240703817</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit spring 6">
+      <option name="closed" value="true" />
+      <created>1781242081225</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1781242081226</updated>
+    </task>
+    <task id="LOCAL-00007" summary="commit spring 7">
+      <option name="closed" value="true" />
+      <created>1781242196177</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1781242196177</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +212,9 @@
     <MESSAGE value="commit spring 3" />
     <MESSAGE value="commit spring 4" />
     <MESSAGE value="commit spring 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit spring 5" />
+    <MESSAGE value="commit spring 6" />
+    <MESSAGE value="commit spring 7" />
+    <MESSAGE value="ultimo cambio" />
+    <option name="LAST_COMMIT_MESSAGE" value="ultimo cambio" />
   </component>
 </project>

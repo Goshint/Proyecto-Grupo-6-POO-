@@ -15,7 +15,7 @@ public class InscribirDTO {
     private Integer idSocio;
     private Integer idClase;
     private LocalDateTime fechaInscripcion;
-    private Integer idPersonalRegistro;  // opcional
+    private Integer idPersonalRegistro;
     private String mensaje;
     private Integer cupoRestante;
 }

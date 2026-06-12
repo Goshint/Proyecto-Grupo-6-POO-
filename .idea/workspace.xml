@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce38c511-0d00-4573-99e8-58a8e9a3d0f7" name="Changes" comment="cambio para dormir">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="ce38c511-0d00-4573-99e8-58a8e9a3d0f7" name="Changes" comment="cambio para dormirr">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VidaFit_Database_ultimo.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gimnasioVida_Fit/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gimnasioVida_Fit/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/resources/application.properties" afterDir="false" />
     </list>
@@ -33,6 +31,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -73,6 +72,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.GimnasioVidaFitApplicationTests.contextLoads.executor": "Debug",
+    "JUnit.GimnasioVidaFitApplicationTests.executor": "Run",
+    "JUnit.gimnasioVida_FitApplicationTests.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -86,7 +88,10 @@
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   },
   "keyToStringList": {
     "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
@@ -94,7 +99,53 @@
     ]
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.GimnasioVidaFitApplicationTests">
+    <configuration name="GimnasioVidaFitApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gimnasioVida_Fit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pe.edu.uni.gimnasioVida_Fit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pe.edu.uni.gimnasioVida_Fit" />
+      <option name="MAIN_CLASS_NAME" value="pe.edu.uni.gimnasioVida_Fit.GimnasioVidaFitApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GimnasioVidaFitApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gimnasioVida_Fit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pe.edu.uni.gimnasioVida_Fit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pe.edu.uni.gimnasioVida_Fit" />
+      <option name="MAIN_CLASS_NAME" value="pe.edu.uni.gimnasioVida_Fit.GimnasioVidaFitApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gimnasioVida_FitApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gimnasioVida_Fit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pe.edu.uni.gimnasioVida_Fit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pe.edu.uni.gimnasioVida_Fit" />
+      <option name="MAIN_CLASS_NAME" value="pe.edu.uni.gimnasioVida_Fit.gimnasioVida_FitApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GimnasioVidaFitApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
       <module name="gimnasioVida_Fit" />
@@ -111,7 +162,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GimnasioVidaFitApplicationTests" />
         <item itemvalue="Spring Boot.GimnasioVidaFitApplication (1)" />
+        <item itemvalue="JUnit.gimnasioVida_FitApplicationTests" />
+        <item itemvalue="JUnit.GimnasioVidaFitApplicationTests.contextLoads" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781248742606</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="cambio para dormirr">
+      <option name="closed" value="true" />
+      <created>1781270437477</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1781270437477</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +310,7 @@
     <MESSAGE value="cambio xd" />
     <MESSAGE value="cambio 3" />
     <MESSAGE value="cambio para dormir" />
-    <option name="LAST_COMMIT_MESSAGE" value="cambio para dormir" />
+    <MESSAGE value="cambio para dormirr" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambio para dormirr" />
   </component>
 </project>

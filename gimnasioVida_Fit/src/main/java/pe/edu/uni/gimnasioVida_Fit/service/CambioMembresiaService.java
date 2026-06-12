@@ -16,63 +16,49 @@ public class CambioMembresiaService {
     private JdbcTemplate jdbcTemplate;
 
     @Transactional(propagation = Propagation.REQUIRES_NEW, rollbackFor = Exception.class)
-public CambioMembresiaDTO cambiarMembresia(CambioMembresiaDTO dto) {
+    public CambioMembresiaDTO cambiarMembresia(CambioMembresiaDTO dto) {
         validarSocioExiste(dto.getIdSocio());
         validarSocioActivo(dto.getIdSocio());
         validarNuevaMembresiaExiste(dto.getIdNuevaMembresia());
-        validarNoEsLaMismaMembresia(dto);
+        validarNoEsLaMismaMembresia(dto.getIdSocio(), dto.getIdNuevaMembresia());
 
-        // Obtener membresía actual
-        String sqlActual = "SELECT id_tipo_suscripcion_actual, fecha_vencimiento FROM Socio WHERE id = ?";
-        var actualRow = jdbcTemplate.queryForMap(sqlActual, dto.getIdSocio());
-        int idActual = (int) actualRow.get("id_tipo_suscripcion_actual");
-        LocalDate vencActual = ((java.sql.Date) actualRow.get("fecha_vencimiento")).toLocalDate();
+        var socio = jdbcTemplate.queryForMap("SELECT id_tipo_suscripcion_actual, fecha_vencimiento FROM Socio WHERE id = ?", dto.getIdSocio());
+        int idActual = (int) socio.get("id_tipo_suscripcion_actual");
+        LocalDate vencAct = ((java.sql.Date) socio.get("fecha_vencimiento")).toLocalDate();
 
-        String sqlMembresia = "SELECT nombre, precio, duracion_dias FROM TipoSuscripcion WHERE id = ?";
-        var actualMemb = jdbcTemplate.queryForMap(sqlMembresia, idActual);
-        var nuevaMemb = jdbcTemplate.queryForMap(sqlMembresia, dto.getIdNuevaMembresia());
+        var memActual = jdbcTemplate.queryForMap("SELECT nombre, precio FROM TipoSuscripcion WHERE id = ?", idActual);
+        var memNueva = jdbcTemplate.queryForMap("SELECT nombre, precio, duracion_dias FROM TipoSuscripcion WHERE id = ?", dto.getIdNuevaMembresia());
 
-        dto.setTipoMembresiaAnterior((String) actualMemb.get("nombre"));
-        dto.setTipoMembresiaAnterior((String) actualMemb.get("nombre"));
-        dto.setPrecioAnterior(((Number) actualMemb.get("precio")).doubleValue());
-        dto.setTipoMembresiaNueva((String) nuevaMemb.get("nombre"));
-        dto.setPrecioNuevo(((Number) nuevaMemb.get("precio")).doubleValue());
+        dto.setTipoMembresiaAnterior((String) memActual.get("nombre"));
+        dto.setPrecioAnterior(((Number) memActual.get("precio")).doubleValue());
+        dto.setTipoMembresiaNueva((String) memNueva.get("nombre"));
+        dto.setPrecioNuevo(((Number) memNueva.get("precio")).doubleValue());
 
-        int duracionDias = (int) nuevaMemb.get("duracion_dias");
-        LocalDate nuevaVenc = vencActual.isBefore(LocalDate.now()) ?
-                LocalDate.now().plusDays(duracionDias) :
-                vencActual.plusDays(duracionDias);
+        int duracion = (int) memNueva.get("duracion_dias");
+        LocalDate nuevaVenc = vencAct.isBefore(LocalDate.now()) ? LocalDate.now().plusDays(duracion) : vencAct.plusDays(duracion);
 
-        String sqlUpdate = "UPDATE Socio SET id_tipo_suscripcion_actual = ?, fecha_vencimiento = ? WHERE id = ?";
-        jdbcTemplate.update(sqlUpdate, dto.getIdNuevaMembresia(), nuevaVenc, dto.getIdSocio());
+        jdbcTemplate.update("UPDATE Socio SET id_tipo_suscripcion_actual = ?, fecha_vencimiento = ? WHERE id = ?",
+                dto.getIdNuevaMembresia(), nuevaVenc, dto.getIdSocio());
 
         dto.setNuevaFechaVencimiento(nuevaVenc);
-        dto.setMensaje("Membresía cambiada exitosamente");
+        dto.setMensaje("Membresía cambiada");
         return dto;
     }
 
     public void validarSocioExiste(int id) {
-        String sql = "SELECT COUNT(1) FROM Socio WHERE id = ?";
-        int count = jdbcTemplate.queryForObject(sql, Integer.class, id);
-        if (count == 0) throw new RuntimeException("Socio no existe");
+        Integer count = jdbcTemplate.queryForObject("SELECT COUNT(1) FROM Socio WHERE id = ?", Integer.class, id);
+        if (count == null || count == 0) throw new RuntimeException("Socio no existe");
     }
-
     public void validarSocioActivo(int id) {
-        String sql = "SELECT estado FROM Socio WHERE id = ?";
-        String estado = jdbcTemplate.queryForObject(sql, String.class, id);
+        String estado = jdbcTemplate.queryForObject("SELECT estado FROM Socio WHERE id = ?", String.class, id);
         if (!"activo".equals(estado)) throw new RuntimeException("Socio no activo");
     }
-
     public void validarNuevaMembresiaExiste(int id) {
-        String sql = "SELECT COUNT(1) FROM TipoSuscripcion WHERE id = ?";
-        int count = jdbcTemplate.queryForObject(sql, Integer.class, id);
-        if (count == 0) throw new RuntimeException("Membresía no existe");
+        Integer count = jdbcTemplate.queryForObject("SELECT COUNT(1) FROM TipoSuscripcion WHERE id = ?", Integer.class, id);
+        if (count == null || count == 0) throw new RuntimeException("Membresía no existe");
     }
-
-    private void validarNoEsLaMismaMembresia(CambioMembresiaDTO dto) {
-        String sql = "SELECT id_tipo_suscripcion_actual FROM Socio WHERE id = ?";
-        int actual = jdbcTemplate.queryForObject(sql, Integer.class, dto.getIdSocio());
-        if (actual == dto.getIdNuevaMembresia())
-            throw new RuntimeException("Ya tiene esa membresía activa");
+    public void validarNoEsLaMismaMembresia(int idSocio, int idNueva) {
+        Integer actual = jdbcTemplate.queryForObject("SELECT id_tipo_suscripcion_actual FROM Socio WHERE id = ?", Integer.class, idSocio);
+        if (actual != null && actual.equals(idNueva)) throw new RuntimeException("Ya tiene esa membresía");
     }
 }

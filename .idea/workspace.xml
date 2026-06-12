@@ -4,23 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce38c511-0d00-4573-99e8-58a8e9a3d0f7" name="Changes" comment="commit spring 4">
-      <change afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/rest/CambioMembresiaRest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/rest/InscribirRest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/rest/PagoRest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/rest/RegistrarSocioRest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/rest/RegistroAccesoRest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/service/CambioMembresiaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/service/InscribirService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/service/PagoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/service/RegistrarSocioService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/service/RegistroAccesoService.java" afterDir="false" />
+    <list default="true" id="ce38c511-0d00-4573-99e8-58a8e9a3d0f7" name="Changes" comment="commit spring 5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/dto/CambioMembresiaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/dto/CambioMembresiaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/dto/InscribirDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/dto/InscribirDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/dto/PagoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/dto/PagoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/dto/RegistrarSocioDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/dto/RegistrarSocioDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/dto/RegistroAccesoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/dto/RegistroAccesoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/service/CambioMembresiaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/service/CambioMembresiaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/service/InscribirService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/service/InscribirService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,12 +68,14 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.GimnasioVidaFitApplication (1).executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.GimnasioVidaFitApplication.executor&quot;: &quot;Run&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
@@ -93,7 +83,21 @@
     ]
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.GimnasioVidaFitApplication (1)">
+    <configuration name="GimnasioVidaFitApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="gimnasioVida_Fit" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pe.edu.uni.gimnasioVida_Fit.GimnasioVidaFitApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pe.edu.uni.gimnasioVida_Fit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GimnasioVidaFitApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
       <module name="GimnasioVida-Fit" />
@@ -110,6 +114,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.GimnasioVidaFitApplication (1)" />
         <item itemvalue="Spring Boot.GimnasioVidaFitApplication" />
       </list>
     </recent_temporary>
@@ -162,17 +167,37 @@
       <option name="project" value="LOCAL" />
       <updated>1781232888820</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit spring 5">
+      <option name="closed" value="true" />
+      <created>1781240703817</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1781240703817</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit spring" />
     <MESSAGE value="commit spring 2" />
     <MESSAGE value="commit spring 3" />
     <MESSAGE value="commit spring 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit spring 4" />
+    <MESSAGE value="commit spring 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit spring 5" />
   </component>
 </project>

@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import java.time.LocalDate;
 
 @Data
@@ -12,7 +11,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 public class RegistrarSocioDTO {
-    private Integer idSocio;          // para respuesta
+    private Integer idSocio;
     private String numeroSocio;
     private String nombre;
     private String apellido;
@@ -21,6 +20,7 @@ public class RegistrarSocioDTO {
     private LocalDate fechaRegistro;
     private LocalDate fechaVencimiento;
     private String estado;
-    private Integer idTipoSuscripcion;  // de entrada
-    private Integer idPersonalRegistro; // opcional, para auditoría
+    private Integer idTipoSuscripcion;
+    private Integer idPersonalRegistro;
+    private String mensaje;
 }

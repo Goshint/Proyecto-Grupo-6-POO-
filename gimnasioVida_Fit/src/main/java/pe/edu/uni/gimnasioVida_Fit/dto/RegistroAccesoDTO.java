@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import java.time.LocalDateTime;
 
 @Data
@@ -15,8 +14,10 @@ public class RegistroAccesoDTO {
     private Integer idAcceso;
     private Integer idSocio;
     private LocalDateTime fechaHoraAcceso;
-    private String metodoIdentificacion; // manual, barras, qr
+    private String metodoIdentificacion;
     private Integer idPersonalRegistro;
-    private Boolean permitido;    // solo para respuesta
+    private Boolean permitido;
     private String mensaje;
+    private String nombreSocio;
+    private String estadoMembresia;
 }

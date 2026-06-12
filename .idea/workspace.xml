@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce38c511-0d00-4573-99e8-58a8e9a3d0f7" name="Changes" comment="cambio xd">
+    <list default="true" id="ce38c511-0d00-4573-99e8-58a8e9a3d0f7" name="Changes" comment="cambio 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VidaFit_Database ultimo.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gimnasioVida_Fit/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gimnasioVida_Fit/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/GimnasioVidaFitApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/java/pe/edu/uni/gimnasioVida_Fit/GimnasioVidaFitApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -192,7 +189,23 @@
       <option name="project" value="LOCAL" />
       <updated>1781244979695</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="cambio 3">
+      <option name="closed" value="true" />
+      <created>1781248283712</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1781248283712</updated>
+    </task>
+    <task id="LOCAL-00010" summary="cambio 3">
+      <option name="closed" value="true" />
+      <created>1781248323803</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1781248323803</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +232,7 @@
     <MESSAGE value="commit spring 7" />
     <MESSAGE value="ultimo cambio" />
     <MESSAGE value="cambio xd" />
-    <option name="LAST_COMMIT_MESSAGE" value="cambio xd" />
+    <MESSAGE value="cambio 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambio 3" />
   </component>
 </project>

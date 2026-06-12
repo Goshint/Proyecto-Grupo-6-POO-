@@ -1,0 +1,268 @@
+{
+  "info": {
+    "name": "GimnasioVida_Fit API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Socios",
+      "item": [
+        {
+          "name": "Registrar socio",
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Carlos\",\n  \"apellido\": \"Lopez\",\n  \"numeroSocio\": \"12345678\",\n  \"email\": \"carlos@mail.com\",\n  \"telefono\": \"999888777\",\n  \"idTipoSuscripcion\": 1,\n  \"idPersonalRegistro\": 1\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/socios/registrar",
+              "host": ["http://localhost:8080"],
+              "path": ["api", "socios", "registrar"]
+            }
+          }
+        },
+        {
+          "name": "Validar DNI (disponibilidad)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/socios/validar/dni/12345678",
+              "host": ["http://localhost:8080"],
+              "path": ["api", "socios", "validar", "dni", "12345678"]
+            }
+          }
+        },
+        {
+          "name": "Validar membresía existe",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/socios/validar/membresia/1",
+              "host": ["http://localhost:8080"],
+              "path": ["api", "socios", "validar", "membresia", "1"]
+            }
+          }
+        },
+        {
+          "name": "Validar personal existe",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/socios/validar/personal/1",
+              "host": ["http://localhost:8080"],
+              "path": ["api", "socios", "validar", "personal", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Pagos y suscripciones",
+      "item": [
+        {
+          "name": "Registrar pago / renovar membresía",
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idSocio\": 1,\n  \"monto\": 45.00,\n  \"metodoPago\": \"efectivo\",\n  \"idTipoSuscripcion\": 1,\n  \"idPersonalRegistro\": 1\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/pago/suscripcion",
+              "host": ["http://localhost:8080"],
+              "path": ["api", "pago", "suscripcion"]
+            }
+          }
+        },
+        {
+          "name": "Validar tipo suscripción existe",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/pago/validar/tipo-suscripcion/1",
+              "host": ["http://localhost:8080"],
+              "path": ["api", "pago", "validar", "tipo-suscripcion", "1"]
+            }
+          }
+        },
+        {
+          "name": "Validar método de pago",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/pago/validar/metodo-pago/efectivo",
+              "host": ["http://localhost:8080"],
+              "path": ["api", "pago", "validar", "metodo-pago", "efectivo"]
+            }
+          }
+        },
+        {
+          "name": "Validar monto correcto",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/pago/validar/monto/1/45.00",
+              "host": ["http://localhost:8080"],
+              "path": ["api", "pago", "validar", "monto", "1", "45.00"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Acceso (registro de entrada)",
+      "item": [
+        {
+          "name": "Registrar acceso",
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idSocio\": 1,\n  \"metodoIdentificacion\": \"qr\",\n  \"idPersonalRegistro\": 1\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/acceso/registrar",
+              "host": ["http://localhost:8080"],
+              "path": ["api", "acceso", "registrar"]
+            }
+          }
+        },
+        {
+          "name": "Obtener accesos diarios (fecha opcional)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/acceso/diario?fecha=2026-06-12",
+              "host": ["http://localhost:8080"],
+              "path": ["api", "acceso", "diario"],
+              "query": [{"key": "fecha", "value": "2026-06-12"}]
+            }
+          }
+        },
+        {
+          "name": "Obtener accesos de un socio hoy",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/acceso/socio/1",
+              "host": ["http://localhost:8080"],
+              "path": ["api", "acceso", "socio", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Clases e inscripciones",
+      "item": [
+        {
+          "name": "Inscribir socio a clase",
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idSocio\": 1,\n  \"idClase\": 1,\n  \"idPersonalRegistro\": 1\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/consultar/inscribir",
+              "host": ["http://localhost:8080"],
+              "path": ["api", "consultar", "inscribir"]
+            }
+          }
+        },
+        {
+          "name": "Validar socio activo con membresía vigente",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/consultar/validar/socio/1",
+              "host": ["http://localhost:8080"],
+              "path": ["api", "consultar", "validar", "socio", "1"]
+            }
+          }
+        },
+        {
+          "name": "Validar clase existe",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/consultar/validar/clase/1",
+              "host": ["http://localhost:8080"],
+              "path": ["api", "consultar", "validar", "clase", "1"]
+            }
+          }
+        },
+        {
+          "name": "Validar cupo disponible en clase",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/consultar/validar/capacidad/1",
+              "host": ["http://localhost:8080"],
+              "path": ["api", "consultar", "validar", "capacidad", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cambio de membresía",
+      "item": [
+        {
+          "name": "Cambiar membresía de socio",
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idSocio\": 1,\n  \"idNuevaMembresia\": 2,\n  \"idPersonalRegistro\": 1\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/procesos/membresia",
+              "host": ["http://localhost:8080"],
+              "path": ["api", "procesos", "membresia"]
+            }
+          }
+        },
+        {
+          "name": "Validar socio existe",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/procesos/validar/socio/1",
+              "host": ["http://localhost:8080"],
+              "path": ["api", "procesos", "validar", "socio", "1"]
+            }
+          }
+        },
+        {
+          "name": "Validar socio activo",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/procesos/validar/socio-activo/1",
+              "host": ["http://localhost:8080"],
+              "path": ["api", "procesos", "validar", "socio-activo", "1"]
+            }
+          }
+        },
+        {
+          "name": "Validar membresía destino existe",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/procesos/validar/membresia/2",
+              "host": ["http://localhost:8080"],
+              "path": ["api", "procesos", "validar", "membresia", "2"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

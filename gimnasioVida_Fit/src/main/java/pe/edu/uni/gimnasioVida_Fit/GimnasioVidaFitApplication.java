@@ -1,6 +1,6 @@
 package pe.edu.uni.gimnasioVida_Fit;
 
-import org.springframework.boot.SpringApplication;
+import 	org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication

@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce38c511-0d00-4573-99e8-58a8e9a3d0f7" name="Changes" comment="commit spring 7">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gimnasioVida_Fit/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="ce38c511-0d00-4573-99e8-58a8e9a3d0f7" name="Changes" comment="cambio xd" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="repository" />
+    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -189,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781242196177</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="cambio xd">
+      <option name="closed" value="true" />
+      <created>1781244979695</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1781244979695</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +226,7 @@
     <MESSAGE value="commit spring 6" />
     <MESSAGE value="commit spring 7" />
     <MESSAGE value="ultimo cambio" />
-    <option name="LAST_COMMIT_MESSAGE" value="ultimo cambio" />
+    <MESSAGE value="cambio xd" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambio xd" />
   </component>
 </project>
